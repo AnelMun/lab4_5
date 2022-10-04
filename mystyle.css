@@ -1,3 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px ;
+    background-color: azure ;
+}
+
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .parent-grid {
+        display: flex;
+        flex-direction: column;
+
+    } 
+}
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    list-style-type: none;
+    
+}
+footer {
+    background-image: url("depositphotos_232252262-stock-photo-bouquet-purple-wildflowers-watercolor-background.jpg") ; 
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+footer li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0px 0px 2px;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 10%;
+    order: 3;
+    margin-left:10px;  
+    
+}
+@media screen and (min-width: 768px) and  (max-width: 1400px) {
+    .categories li{
+       background-color: #96DED1 ;
+       border-style: dashed;
+       border-color: white;
+    }
+}
+.contacts{
+    
+    background-color:rgba(255, 255, 255, 0.651);
+    display: flex;
+    order: 1;
+    width: 45%;
+
+}
+.map{
+    width: 50% ;
+    margin-left: 10%;
+
+}
+.quick_links li{
+  border-radius: 30px;
+
+  
+}
+.categories li {
+ border-radius: 30px;
+
+}
+@media screen and (min-width: 768px) and  (max-width: 1400px) {
+    .quick_links li{
+       background-color: #96DED1 ;
+       border-style: dashed;
+       border-color: white;
+    }
+}
+.quick_links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 10%;
+    order: 4; 
+    margin-left: 75px;
+    
+}
+
 h1{
     color:#2b10af;
     text-align: center;
@@ -7,7 +104,7 @@ h1{
 }
 .banner {
         background-image: url("depositphotos_232252262-stock-photo-bouquet-purple-wildflowers-watercolor-background.jpg");
-        width: 1350px;
+        width: auto;
         height: 200px;
         position: relative;
 }
@@ -17,20 +114,14 @@ h1{
     left: 50px;
 }
 
+
 ul {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    text-align: left;
+
 }
 
-li{
-    border-style: dashed;
-    list-style-type:none;
-    width:150px;
-    border-color: #2b10af;
-    border-width: 1.5px;
-    background-color:#2a10af46;
-    padding: 5px 10px 5px 30px;
-} 
+
 
 header{
     text-align: center;
@@ -50,7 +141,19 @@ h2{
 .Man {
     float:left;
     margin: 0px 10px 2px 0px;
+    border-radius: 75px;
         
+
+}
+.Man {
+    width:  500px;
+    height: 350px;
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .Man {
+        width: 100%;
+        height:105%;
+    }
 }
 
 #Photo2{
@@ -61,39 +164,85 @@ h2{
    height:  270px;
   
 }
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+  #Photo2{
+   width: 100%;
+   height: 100%;
+   border-radius: 20%;
+}
+}
+ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+.names li{
+    border-style: dashed;
+    border-radius: 30px;
+}
+@media screen and (min-width: 768px) and  (max-width: 1400px) {
+    .names li{
+       background-color: #96DED1 ;
+       border-color: white;
+    }
+}
+.menu li{
+    border-style: dashed;
+    text-align: center;
+    list-style-type:none;
+    border-color: #2b10af;
+    border-width: 3px;
+    background-color:#2a10af46;
+    padding: 5px 10px 5px 30px;
+    width: 900px;
+    border-radius: 30px;
+
+} 
+li{
+    border-style: solid;
+    text-align: center;
+    list-style-type:none;
+    border-color: white;
+    border-width: 4px;
+    background-color:#2a10af46;
+    padding: 5px 10px 5px 30px;
+    width: 200px;
+    
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    li {
+        width: 100%;
+        text-align: center;
+        font-size: 110%;
+    }
+}
+@media screen  and (min-width: 768px) {
+    li {
+        width: 100%;
+        text-align: center;
+        
+    }
+}
 #grading{
     background-image: url("depositphotos_232252262-stock-photo-bouquet-purple-wildflowers-watercolor-background.jpg") ;
+    height: 100%;
 }
+
 table{
     background-color: rgba(240, 248, 255, 0.674);
     margin-left: auto;
     margin-right: auto;
 }
+
 h3{
     color:azure;
     background-color: #2b10af;
     font-family:'Franklin Gothic Medium'
 }
-.Article1{
-    background-color: #2a10af46; 
-    border-style: dashed;
-    border-color: #2b10af;
-    
-}
-.Article2{
-    background-color: #2a10af46;
-    border-style: dashed; 
-    border-color: #2b10af;
-    
-}
-.Article3{
-    background-color: #2a10af46; 
-    border-style: dashed;
-    border-color: #2b10af;
-    
 
-}
+
+
 /* active link */
 a:active {
   color: #2b10af;
@@ -102,7 +251,7 @@ a:active {
 
 /* mouse over link */
 a:hover {
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 18px
 }
@@ -120,22 +269,192 @@ a:visited {
     width:  150px;
     height: 150px;
 }
-.Man {
-    width:  400px;
-    height: 300px;
-}
-footer{
-    margin-top: 100px;
-    width: 90%;
-    padding: 20px 5%;
-    background-image: url("depositphotos_232252262-stock-photo-bouquet-purple-wildflowers-watercolor-background.jpg") ;
-}
+
+
+
 .contacts{
     
     background-color:rgba(255, 255, 255, 0.651);
     display: flex;
 }
+.map iframe{
+   position: relative;
+   width: 300px;
+   height: 200px;
+ }
+
+
 .Articles{
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  border-style: dashed;
+  border-color: #2b10af;
+  border-width: 4px;
+  
+}
+.Article1{
+  order: 1;
+  background-color: azure;
+  width: 50%;
 }
 
+.Article2 {
+  order: 2;
+  background-color: #CFA7FF;
+  width: 50%;
+}
+
+.Article3{
+  order: 3;
+  background-color: #96DED1;
+  width: 100%;
+}
+p::first-letter{
+      color:purple;
+      font-weight:bold ;
+    }
+p::first-line{ 
+      color: black;
+    }
+
+@media only screen and (min-width: 300px) and  (max-width: 767px) {
+    .banner {
+     font-size: 40px;
+     text-align: center;
+     width: 100%;
+     height: 20%;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    footer{
+        width: 100%;
+      }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .menu {
+        flex-wrap: wrap;
+
+    } 
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .logo img {
+    max-width: 25%;
+    max-height: 25%;
+   }
+}
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .logo  {
+    top: 5px;
+    left: 0px;
+}
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+
+    }    
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .map{
+        margin-left: 0%;
+    }    
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    p {
+     width: 100%;
+     font-size: 105%;
+    }
+}
+@media screen and (min-width: 768px) {
+  p{
+    font-size: 100%;
+    width: 99%;
+  } 
+}
+
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .email{
+     width: 100%;
+     font-size: 80%;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    a {
+     width: 100%;
+     font-size: 105%;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    tr {
+     width: 100%;
+     font-size: 105%;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    h5 {
+     width: 100%;
+     font-size: 120%;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    h2 {
+     width: 100%;
+     font-size: 105%;
+    }
+}
+@media screen and (min-width: 768px) and  (max-width: 1400px) {
+    h2{
+       background-color: #96DED1 ;
+       text-align: center;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    h3 {
+     width: 100%;
+     font-size: 105%;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    h4 {
+     width: 100%;
+     font-size: 105%;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    article {
+     width: 100%;
+     font-size: 105%;
+    }
+}
+
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .sett{
+       display: flex;
+       flex-direction: column;
+       max-width: 100%;
+    }
+}
+@media screen  and (min-width: 300px) and  (max-width: 767px) {
+    .require {
+       display: flex;
+       flex-direction: column;
+       max-width: 100%;
+    }
+}
+@media screen and (min-width: 300px) and  (max-width: 767px) {
+    .selectt{
+       display: flex;
+       flex-wrap: wrap;
+       width: 100%;
+    }
+}
+@media screen and (min-width: 300px) and  (max-width: 767px) {
+    .map iframe {
+       width: 40%;
+       height: 30%;
+       position: absolute;
+    }
+
+   
